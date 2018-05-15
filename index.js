@@ -22,25 +22,4 @@ function deepestChild() {
     next = current.querySelector('div');
   }
   return current;
-  
-  /*let current = document.getElementById('grand-node');
-  let going = true;
-  let next = [];
-  while (next.length > 1) {
-    const lid = current.querySelectorAll('div');
-    for (let i = 0; i < lid.length; i++) {
-      next.push(lid[i]);
-    }
-    current = next[0];
-    next.shift();
-    going = false;
-    if (next.length > 0) {
-      current = next[0];
-      next = next.slice(1)
-    } else {
-      going = false;
-    }
-  }
-  //current = current.querySelectorAll('div');
-  return current;*/
 }
